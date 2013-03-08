@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# load devices
+#
+
+case "$1" in
+  start)
+	  modprobe snd-bcm2835
+	;;
+  stop)
+	;;
+  restart|reload)
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
