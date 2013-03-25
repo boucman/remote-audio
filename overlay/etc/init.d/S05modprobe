@@ -6,6 +6,7 @@
 case "$1" in
   start)
 	  modprobe snd-bcm2835
+	  modprobe rt2800usb
 	;;
   stop)
 	;;
